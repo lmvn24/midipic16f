@@ -1,0 +1,461 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1527 ]
+[d frameptr 6 ]
+"263 /Users/marianovera/MPLABXProjects/1527.X/main.c
+[e E3111 event_type `uc
+EVT_SYS_REALTIME_TIMING_CLOCK 0
+EVT_SYS_REALTIME_RESERVED_F9 1
+EVT_SYS_REALTIME_SEQ_START 2
+EVT_SYS_REALTIME_SEQ_CONTINUE 3
+EVT_SYS_REALTIME_SEQ_STOP 4
+EVT_SYS_REALTIME_RESERVED_FD 5
+EVT_SYS_REALTIME_ACTIVE_SENSE 6
+EVT_SYS_REALTIME_RESET 7
+EVT_CHAN_NOTE_OFF 8
+EVT_CHAN_NOTE_ON 9
+EVT_CHAN_POLY_AFTERTOUCH 10
+EVT_CHAN_CONTROL_CHANGE 11
+EVT_CHAN_PROGRAM_CHANGE 12
+EVT_CHAN_AFTERTOUCH 13
+EVT_CHAN_PITCH_BEND 14
+EVT_MAX 15
+]
+"99 /Users/marianovera/MPLABXProjects/1527.X/midi.c
+[e E3143 PROTOCOL_STATE `uc
+STATE_WAITING_FOR_STATUS 0
+STATE_ERROR 1
+STATE_WAITING_CHAN_NOTE_OFF_KEY 2
+STATE_WAITING_CHAN_NOTE_OFF_VELOCITY 3
+STATE_WAITING_CHAN_NOTE_ON_KEY 4
+STATE_WAITING_CHAN_NOTE_ON_VELOCITY 5
+STATE_WAITING_CHAN_POLY_AFTERTOUCH_KEY 6
+STATE_WAITING_CHAN_POLY_AFTERTOUCH_PRESSURE 7
+STATE_WAITING_CHAN_CONTROL_CHANGE_CONTROL 8
+STATE_WAITING_CHAN_CONTROL_CHANGE_VALUE 9
+STATE_WAITING_CHAN_PROGRAM_CHANGE_PROGRAM 10
+STATE_WAITING_CHAN_AFTERTOUCH_PRESSURE 11
+STATE_WAITING_CHAN_PITCH_BEND_LSBITS 12
+STATE_WAITING_CHAN_PITCH_BEND_MSBITS 13
+]
+"130
+[e E8 event_type `uc
+EVT_SYS_REALTIME_TIMING_CLOCK 0
+EVT_SYS_REALTIME_RESERVED_F9 1
+EVT_SYS_REALTIME_SEQ_START 2
+EVT_SYS_REALTIME_SEQ_CONTINUE 3
+EVT_SYS_REALTIME_SEQ_STOP 4
+EVT_SYS_REALTIME_RESERVED_FD 5
+EVT_SYS_REALTIME_ACTIVE_SENSE 6
+EVT_SYS_REALTIME_RESET 7
+EVT_CHAN_NOTE_OFF 8
+EVT_CHAN_NOTE_ON 9
+EVT_CHAN_POLY_AFTERTOUCH 10
+EVT_CHAN_CONTROL_CHANGE 11
+EVT_CHAN_PROGRAM_CHANGE 12
+EVT_CHAN_AFTERTOUCH 13
+EVT_CHAN_PITCH_BEND 14
+EVT_MAX 15
+]
+"10 /Applications/microchip/xc8/v2.41/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.41/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"39 /Users/marianovera/MPLABXProjects/1527.X/main.c
+[v _OSC OSC `(v  1 e 1 0 ]
+"47
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"73
+[v _error error `(v  1 e 1 0 ]
+"79
+[v _control_change control_change `(v  1 e 1 0 ]
+"83
+[v _IOinit IOinit `(v  1 e 1 0 ]
+"177
+[v _CCP CCP `(v  1 e 1 0 ]
+"254
+[v _system_init system_init `(c  1 e 1 0 ]
+"274
+[v _main main `(v  1 e 1 0 ]
+"120 /Users/marianovera/MPLABXProjects/1527.X/midi.c
+[v _null_event_cb null_event_cb `(v  1 s 1 null_event_cb ]
+"128
+[v _invoke_callback invoke_callback `T(v  1 s 1 invoke_callback ]
+"162
+[v _rx_status_sys_realtime_byte rx_status_sys_realtime_byte `(c  1 s 1 rx_status_sys_realtime_byte ]
+"202
+[v _rx_status_sys_common_byte rx_status_sys_common_byte `(c  1 s 1 rx_status_sys_common_byte ]
+"209
+[v _rx_status_channel_byte rx_status_channel_byte `(c  1 s 1 rx_status_channel_byte ]
+"258
+[v _rx_data_byte rx_data_byte `(c  1 s 1 rx_data_byte ]
+"359
+[v _midi_init midi_init `(c  1 e 1 0 ]
+"367
+[v _midi_register_event_handler midi_register_event_handler `(c  1 e 1 0 ]
+[s S377 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"1288 /Applications/microchip/xc8/v2.41/pic/include/proc/pic16f1527.h
+[s S381 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S389 . 1 `S377 1 . 1 0 `S381 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES389  1 e 1 @28 ]
+"1338
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S128 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1355
+[u S137 . 1 `S128 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES137  1 e 1 @140 ]
+"1400
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S171 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1417
+[u S180 . 1 `S171 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES180  1 e 1 @141 ]
+"1462
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S192 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1479
+[u S201 . 1 `S192 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES201  1 e 1 @142 ]
+"1524
+[v _TRISD TRISD `VEuc  1 e 1 @143 ]
+[s S213 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1541
+[u S222 . 1 `S213 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES222  1 e 1 @143 ]
+"1586
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+[s S234 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 TRISE3 1 0 :1:3 
+`uc 1 TRISE4 1 0 :1:4 
+`uc 1 TRISE5 1 0 :1:5 
+`uc 1 TRISE6 1 0 :1:6 
+`uc 1 TRISE7 1 0 :1:7 
+]
+"1603
+[u S243 . 1 `S234 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES243  1 e 1 @144 ]
+[s S312 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1944
+[s S319 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S326 . 1 `S312 1 . 1 0 `S319 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES326  1 e 1 @149 ]
+[s S22 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+"2141
+[s S26 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+]
+[u S34 . 1 `S22 1 . 1 0 `S26 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES34  1 e 1 @153 ]
+"2870
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+[s S149 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 ANSA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"2888
+[s S156 . 1 `uc 1 ANSELA 1 0 :6:0 
+]
+[u S158 . 1 `S149 1 . 1 0 `S156 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES158  1 e 1 @396 ]
+"2923
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2981
+[v _ANSELD ANSELD `VEuc  1 e 1 @399 ]
+"3027
+[v _ANSELE ANSELE `VEuc  1 e 1 @400 ]
+"3378
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"3448
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+[s S94 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3523
+[u S103 . 1 `S94 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES103  1 e 1 @413 ]
+[s S73 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3703
+[u S82 . 1 `S73 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES82  1 e 1 @414 ]
+[s S50 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3883
+[u S59 . 1 `S50 1 . 1 0 ]
+[v _BAUD1CONbits BAUD1CONbits `VES59  1 e 1 @415 ]
+[s S353 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+]
+"5379
+[s S356 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+]
+[u S363 . 1 `S353 1 . 1 0 `S356 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES363  1 e 1 @659 ]
+[s S405 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"5558
+[s S410 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S419 . 1 `S405 1 . 1 0 `S410 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES419  1 e 1 @669 ]
+"5763
+[v _TRISF TRISF `VEuc  1 e 1 @780 ]
+[s S255 . 1 `uc 1 TRISF0 1 0 :1:0 
+`uc 1 TRISF1 1 0 :1:1 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"5780
+[u S264 . 1 `S255 1 . 1 0 ]
+[v _TRISFbits TRISFbits `VES264  1 e 1 @780 ]
+"5825
+[v _TRISG TRISG `VEuc  1 e 1 @781 ]
+[s S297 . 1 `uc 1 TRISG0 1 0 :1:0 
+`uc 1 TRISG1 1 0 :1:1 
+`uc 1 TRISG2 1 0 :1:2 
+`uc 1 TRISG3 1 0 :1:3 
+`uc 1 TRISG4 1 0 :1:4 
+]
+"5839
+[u S303 . 1 `S297 1 . 1 0 ]
+[v _TRISGbits TRISGbits `VES303  1 e 1 @781 ]
+"6518
+[v _ANSELF ANSELF `VEuc  1 e 1 @1036 ]
+[s S276 . 1 `uc 1 ANSF0 1 0 :1:0 
+`uc 1 ANSF1 1 0 :1:1 
+`uc 1 ANSF2 1 0 :1:2 
+`uc 1 ANSF3 1 0 :1:3 
+`uc 1 ANSF4 1 0 :1:4 
+`uc 1 ANSF5 1 0 :1:5 
+`uc 1 ANSF6 1 0 :1:6 
+`uc 1 ANSF7 1 0 :1:7 
+]
+"6535
+[u S285 . 1 `S276 1 . 1 0 ]
+[v _ANSELFbits ANSELFbits `VES285  1 e 1 @1036 ]
+"6580
+[v _ANSELG ANSELG `VEuc  1 e 1 @1037 ]
+[s S344 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 WPUG5 1 0 :1:5 
+]
+"7242
+[u S347 . 1 `S344 1 . 1 0 ]
+[v _WPUGbits WPUGbits `VES347  1 e 1 @1165 ]
+"16 /Users/marianovera/MPLABXProjects/1527.X/main.c
+[v _lastresult_0 lastresult_0 `VEus  1 e 2 0 ]
+"17
+[v _lastresult_1 lastresult_1 `VEus  1 e 2 0 ]
+"18
+[v _lastresult_2 lastresult_2 `VEus  1 e 2 0 ]
+"19
+[v _lastresult_3 lastresult_3 `VEus  1 e 2 0 ]
+"20
+[v _lastresult_4 lastresult_4 `VEus  1 e 2 0 ]
+"21
+[v _lastresult_5 lastresult_5 `VEus  1 e 2 0 ]
+"22
+[v _lastresult_6 lastresult_6 `VEus  1 e 2 0 ]
+"23
+[v _lastresult_7 lastresult_7 `VEus  1 e 2 0 ]
+"24
+[v _lastresult_8 lastresult_8 `VEus  1 e 2 0 ]
+"25
+[v _lastresult_9 lastresult_9 `VEus  1 e 2 0 ]
+"28
+[v _result_0 result_0 `VEus  1 e 2 0 ]
+"29
+[v _result_1 result_1 `VEus  1 e 2 0 ]
+"30
+[v _result_2 result_2 `VEus  1 e 2 0 ]
+"31
+[v _result_3 result_3 `VEus  1 e 2 0 ]
+"32
+[v _result_4 result_4 `VEus  1 e 2 0 ]
+"33
+[v _result_5 result_5 `VEus  1 e 2 0 ]
+"34
+[v _result_6 result_6 `VEus  1 e 2 0 ]
+"35
+[v _result_7 result_7 `VEus  1 e 2 0 ]
+"36
+[v _result_8 result_8 `VEus  1 e 2 0 ]
+"37
+[v _result_9 result_9 `VEus  1 e 2 0 ]
+"99 /Users/marianovera/MPLABXProjects/1527.X/midi.c
+[v _g_state g_state `uc  1 s 1 g_state ]
+"102
+[v _g_debug_last_status_byte g_debug_last_status_byte `uc  1 s 1 g_debug_last_status_byte ]
+"103
+[v _g_debug_last_data_byte g_debug_last_data_byte `uc  1 s 1 g_debug_last_data_byte ]
+"106
+[v _g_current_channel g_current_channel `uc  1 s 1 g_current_channel ]
+"107
+[v _g_data_byte_one g_data_byte_one `uc  1 s 1 g_data_byte_one ]
+"108
+[v _g_data_byte_two g_data_byte_two `uc  1 s 1 g_data_byte_two ]
+"111
+[v _g_message_counter g_message_counter `ul  1 s 4 g_message_counter ]
+"115
+[v _g_callbacks g_callbacks `[15]*.37(v  1 s 30 g_callbacks ]
+"274 /Users/marianovera/MPLABXProjects/1527.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"280
+[v main@status status `c  1 a 1 4 ]
+"288
+} 0
+"254
+[v _system_init system_init `(c  1 e 1 0 ]
+{
+"255
+[v system_init@status status `c  1 a 1 3 ]
+"272
+} 0
+"367 /Users/marianovera/MPLABXProjects/1527.X/midi.c
+[v _midi_register_event_handler midi_register_event_handler `(c  1 e 1 0 ]
+{
+[v midi_register_event_handler@evt evt `E8  1 a 1 wreg ]
+[v midi_register_event_handler@evt evt `E8  1 a 1 wreg ]
+[v midi_register_event_handler@cb cb `*.37(v  1 p 2 0 ]
+[v midi_register_event_handler@evt evt `E8  1 a 1 2 ]
+"375
+} 0
+"359
+[v _midi_init midi_init `(c  1 e 1 0 ]
+{
+"361
+[v midi_init@i i `i  1 a 2 1 ]
+"365
+} 0
+"73 /Users/marianovera/MPLABXProjects/1527.X/main.c
+[v _error error `(v  1 e 1 0 ]
+{
+"77
+} 0
+"47
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"64
+} 0
+"39
+[v _OSC OSC `(v  1 e 1 0 ]
+{
+"45
+} 0
+"83
+[v _IOinit IOinit `(v  1 e 1 0 ]
+{
+"175
+} 0
+"177
+[v _CCP CCP `(v  1 e 1 0 ]
+{
+"252
+} 0
